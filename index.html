@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio BTS SIO</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <span class="logo-square"></span>
+                <span class="logo-text">Portfolio</span>
+            </div>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="#accueil" class="nav-link active">Accueil</a></li>
+                <li><a href="#cv" class="nav-link">CV</a></li>
+                <li><a href="#experiences" class="nav-link">Expériences</a></li>
+                <li><a href="#competences" class="nav-link">Compétences</a></li>
+                <li><a href="#veille" class="nav-link">Veille</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+            <button class="menu-toggle" id="menuToggle" aria-label="Menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Page Accueil -->
+    <section id="accueil" class="page active">
+        <div class="container">
+            <div class="hero-section">
+                <div class="hero-content">
+                    <div class="hero-square"></div>
+                    <h1 class="hero-title">
+                        <span class="title-line">Bonjour, je suis</span>
+                        <span class="title-name">Baptiste Godin</span>
+                    </h1>
+                    <p class="hero-subtitle">Étudiant en BTS SIO - Services Informatiques aux Organisations</p>
+                    <div class="hero-badges">
+                        <span class="badge">SLAM</span>
+                        <span class="badge">Développement</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="section-grid">
+                <div class="card-square">
+                    <div class="card-icon">🎓</div>
+                    <h3>BTS SIO</h3>
+                    <p>Le Brevet de Technicien Supérieur Services Informatiques aux Organisations forme des techniciens supérieurs capables de répondre aux besoins informatiques des entreprises.</p>
+                    <p class="card-highlight">Spécialité SLAM (Solutions Logicielles et Applications Métiers)</p>
+                </div>
+
+                <div class="card-square">
+                    <div class="card-icon">💼</div>
+                    <h3>Pourquoi SLAM ?</h3>
+                    <p>J'ai choisi la spécialité SLAM car elle correspond parfaitement à mon projet professionnel de devenir développeur d'applications. Cette spécialité me permet de :</p>
+                    <ul class="card-list">
+                        <li>Développer des applications web et mobiles</li>
+                        <li>Maîtriser les langages de programmation modernes</li>
+                        <li>Comprendre le cycle de vie des applications</li>
+                        <li>Travailler en équipe sur des projets concrets</li>
+                    </ul>
+                </div>
+
+                <div class="card-square">
+                    <div class="card-icon">🎯</div>
+                    <h3>Objectifs Professionnels</h3>
+                    <p>Mon objectif est de devenir développeur full-stack, capable de créer des applications complètes de A à Z. Je souhaite travailler dans une entreprise innovante où je pourrai continuer à apprendre et évoluer.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Page CV -->
+    <section id="cv" class="page">
+        <div class="container">
+            <h2 class="page-title">Mon Curriculum Vitae</h2>
+            
+            <div class="cv-container">
+                <div class="cv-photo-placeholder">
+                    <img src="images/Photo_CV.png" alt="Photo de Baptiste Godin" style="width: 100%; height: 100%; object-fit: cover;">
+                </div>
+                    <div class="cv-section">
+                        <h3>Coordonnées</h3>
+                        <p>Email: baptistegodin02@gmail.com</p>
+                        <p>Téléphone: 06 24 41 27 03</p>
+                        <p>Adresse: Valenciennes, France</p>
+                    </div>
+                    <div class="cv-section">
+                        <h3>Langues</h3>
+                        <p>Français: Natif</p>
+                        <p>Anglais: B2</p>
+                    </div>
+                    <div class="cv-section">
+                        <h3>Centres d'intérêt</h3>
+                        <p>Développement web</p>
+                        <p>Sport</p>
+                        <p>Lecture</p>
+                    </div>
+                </div>
+
+                <div class="cv-main">
+                    <div class="cv-section-large">
+                        <h3>Formation</h3>
+                        <div class="cv-item">
+                            <div class="cv-item-header">
+                                <h4>BTS SIO - Spécialité SLAM</h4>
+                                <span class="cv-date">2024 - 2026</span>
+                            </div>
+                            <p class="cv-location">Lycée Dampierre</p>
+                            <p>Formation en développement d'applications, bases de données, réseaux et sécurité informatique.</p>
+                        </div>
+                        <div class="cv-item">
+                            <div class="cv-item-header">
+                                <h4>Baccalauréat</h4>
+                                <span class="cv-date">2023</span>
+                            </div>
+                            <p class="cv-location">Lycée Saint-Luc</p>
+                            <p>Systèmes numériques </p>
+                        </div>
+                    </div>
+
+                    <div class="cv-section-large">
+                        <h3>Compétences Techniques</h3>
+                        <div class="skills-grid">
+                            <div class="skill-item">
+                                <span class="skill-name">HTML/CSS</span>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" style="width: 85%"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <span class="skill-name">PHP</span>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" style="width: 70%"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <span class="skill-name">SQL</span>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" style="width: 80%"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <span class="skill-name">Python</span>
+                                <div class="skill-bar">
+                                    <div class="skillAttestation_Stage_1ere_annee.pdf-progress" style="width: 65%"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="cv-download">
+                <a href="documents/CV - Godin Baptiste.pdf" class="btn-primary" download>Télécharger le CV PDF</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Page Expériences -->
+    <section id="experiences" class="page">
+        <div class="container">
+            <h2 class="page-title">Expériences Professionnelles</h2>
+
+            <div class="experiences-timeline">
+                <!-- Stage 1 -->
+                <div class="timeline-item featured">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <div class="experience-badge">Stage BTS</div>
+                        <h3>Stage de 2ème année - Agglomération de Saint-Quentin</h3>
+                        <p class="experience-date">17/11/2025 au 19/12/2025</p>
+                        <p class="experience-location">📍 Saint-Quentin</p>
+                        <div class="experience-description">
+                            <h4>Contexte :</h4>
+                            <p>Stage effectué au sein de l'Agglomération de Saint-Quentin, collectivité territoriale gérant les services publics locaux. L'objectif était de développer une solution automatisée pour collecter et centraliser les flux d'information RSS provenant de diverses sources (actualités locales, événements, services publics) afin d'améliorer la veille informationnelle de la collectivité.</p>
+                            
+                            <h4>Missions réalisées :</h4>
+                            <ul>
+                                <li>Développement d'un scraper de flux RSS complet en Symfony permettant la collecte automatique d'informations depuis plusieurs sources</li>
+                                <li>Conception et implémentation de l'architecture de l'application avec séparation des responsabilités (services, contrôleurs, entités)</li>
+                                <li>Mise en place d'un système de parsing et de validation des flux RSS avec gestion des erreurs</li>
+                                <li>Création d'une interface d'administration pour la gestion des sources RSS et la visualisation des données collectées</li>
+                                <li>Implémentation d'un système de cache pour optimiser les performances et réduire les appels aux sources externes</li>
+                                <li>Développement de fonctionnalités de filtrage et de recherche dans les contenus récupérés</li>
+                                <li>Tests unitaires et fonctionnels pour garantir la qualité du code</li>
+                            </ul>
+
+                            <h4>Technologies utilisées :</h4>
+                            <div class="tech-tags">
+                                <span class="tech-tag">Symfony</span>
+                                <span class="tech-tag">PHP</span>
+                                <span class="tech-tag">MySQL</span>
+                                <span class="tech-tag">Twig</span>
+                                <span class="tech-tag">Doctrine ORM</span>
+                                <span class="tech-tag">Composer</span>
+                            </div>
+
+                            <h4>Compétences développées :</h4>
+                            <p>Maîtrise du framework Symfony, développement orienté objet en PHP, gestion de bases de données avec Doctrine, parsing de données XML/RSS, développement d'APIs, optimisation des performances, tests automatisés, travail en équipe dans un environnement professionnel.</p>
+                        </div>
+                        <div class="attestation-link">
+                            <a href="attestations/Attestation de stage SIO-2.pdf" class="btn-secondary" target="_blank">Voir l'attestation de stage</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Stage 2 -->
+                <div class="timeline-item featured">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <div class="experience-badge">Stage BTS</div>
+                        <h3>Stage de 1ère année - Agglomération de Saint-Quentin</h3>
+                        <p class="experience-date">26 mai 2025 au 4 juillet 2025</p>
+                        <p class="experience-location">📍 Saint-Quentin</p>
+                        <div class="experience-description">
+                            <h4>Contexte :</h4>
+                            <p>Stage effectué au sein de l'Agglomération de Saint-Quentin, collectivité territoriale regroupant plusieurs communes. Le projet consistait à développer une plateforme de signalement permettant aux citoyens et aux entreprises partenaires de l'agglomération de signaler des problèmes ou des demandes concernant les services publics locaux (voirie, éclairage, propreté, etc.).</p>
+                            
+                            <h4>Missions réalisées :</h4>
+                            <ul>
+                                <li>Développement d'un site web de signalement en Symfony pour les utilisateurs de la ville et les entreprises partenaires de l'agglomération</li>
+                                <li>Conception de la base de données pour gérer les signalements, les utilisateurs et les catégories de problèmes</li>
+                                <li>Implémentation d'un système d'authentification et de gestion des rôles (citoyens, entreprises, administrateurs)</li>
+                                <li>Création d'un formulaire de signalement avec upload de photos et géolocalisation</li>
+                                <li>Développement d'une interface d'administration pour le suivi et la gestion des signalements</li>
+                                <li>Mise en place d'un système de notifications pour informer les utilisateurs du statut de leurs signalements</li>
+                                <li>Intégration d'une carte interactive pour visualiser les signalements géolocalisés</li>
+                            </ul>
+
+                            <h4>Technologies utilisées :</h4>
+                            <div class="tech-tags">
+                                <span class="tech-tag">Symfony</span>
+                                <span class="tech-tag">PHP</span>
+                                <span class="tech-tag">MySQL</span>
+                                <span class="tech-tag">Twig</span>
+                                <span class="tech-tag">JavaScript</span>
+                                <span class="tech-tag">Bootstrap</span>
+                            </div>
+
+                            <h4>Compétences développées :</h4>
+                            <p>Découverte du framework Symfony, développement web avec PHP, modélisation de bases de données, gestion des utilisateurs et authentification, intégration d'APIs (cartes, géolocalisation), développement frontend avec JavaScript, travail sur un projet concret au service des citoyens.</p>
+                        </div>
+                        <div class="attestation-link">
+                            <a href="attestations/Attestation_Stage_1ere_annee.pdf" class="btn-secondary" target="_blank">Voir l'attestation de stage</a>
+                        </div>
+                    </div>
+                </div>
+    </section>
+
+    <!-- Page Compétences -->
+    <section id="competences" class="page">
+        <div class="container">
+            <h2 class="page-title">Portefeuille de Compétences</h2>
+            <p class="page-subtitle">Découvrez l'ensemble de mes compétences techniques et professionnelles acquises durant ma formation BTS SIO</p>
+
+            <div class="competence-download-container">
+                <div class="competence-card">
+                    <div class="competence-icon">📋</div>
+                    <h3>Portefeuille de Compétences</h3>
+                    <p>Document complet présentant toutes mes compétences techniques, professionnelles et transversales acquises au cours de ma formation BTS SIO spécialité SLAM.</p>
+                    <a href="documents/Portefeuille de compétence.pdf" class="btn-primary" download>Télécharger le Portefeuille de Compétences</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Page Veille Technologique -->
+    <section id="veille" class="page">
+        <div class="container">
+            <h2 class="page-title">Veille Technologique</h2>
+            <p class="page-subtitle">Blog de veille sur les technologies et tendances du développement web</p>
+
+            <div class="blog-grid">
+                <article class="blog-card">
+                    <div class="blog-date">
+                        <span class="date-day">03</span>
+                        <span class="date-month">Fév</span>
+                    </div>
+                    <div class="blog-content">
+                        <div class="blog-tags">
+                            <span class="blog-tag">SvelteKit</span>
+                            <span class="blog-tag">Framework</span>
+                            <span class="blog-tag">Performance</span>
+                        </div>
+                        <h3>SvelteKit 2025 : L'adoption enterprise et les nouvelles fonctionnalités</h3>
+                        <p>SvelteKit connaît une croissance significative en 2025 avec une adoption de plus en plus importante au niveau enterprise. Des entreprises comme The New York Times, Apple et Spotify utilisent déjà SvelteKit en production. Les dernières mises à jour incluent les composants asynchrones, les Remote Functions côté serveur et le système de réactivité basé sur les runes qui révolutionne le développement d'applications réactives.</p>
+                        <a href="https://blog.openreplay.com/svelte-sveltekit-updates-summer-2025-recap" target="_blank" rel="noopener noreferrer" class="blog-link">Lire la suite →</a>
+                    </div>
+                </article>
+
+                <article class="blog-card">
+                    <div class="blog-date">
+                        <span class="date-day">25</span>
+                        <span class="date-month">Jan</span>
+                    </div>
+                    <div class="blog-content">
+                        <div class="blog-tags">
+                            <span class="blog-tag">SvelteKit</span>
+                            <span class="blog-tag">Runes</span>
+                            <span class="blog-tag">Réactivité</span>
+                        </div>
+                        <h3>Les Runes de Svelte 5 : Une nouvelle approche de la réactivité</h3>
+                        <p>Le système de runes introduit dans Svelte 5 transforme fondamentalement la façon de développer des applications réactives. Avec `$state` et `$derived`, les développeurs bénéficient d'une réactivité plus intuitive et performante sans avoir besoin de hooks complexes. Cette approche compile le code en JavaScript vanilla, éliminant le besoin d'un virtual DOM et réduisant significativement la taille des bundles.</p>
+                        <a href="https://svelte.dev/blog/runes" target="_blank" rel="noopener noreferrer" class="blog-link">Lire la suite →</a>
+                    </div>
+                </article>
+
+                <article class="blog-card">
+                    <div class="blog-date">
+                        <span class="date-day">15</span>
+                        <span class="date-month">Jan</span>
+                    </div>
+                    <div class="blog-content">
+                        <div class="blog-tags">
+                            <span class="blog-tag">SvelteKit</span>
+                            <span class="blog-tag">SSR</span>
+                            <span class="blog-tag">Full-Stack</span>
+                        </div>
+                        <h3>SvelteKit : Framework full-stack moderne pour applications web</h3>
+                        <p>SvelteKit étend Svelte au-delà du frontend en offrant des capacités full-stack complètes. Le framework propose le rendu côté serveur (SSR), la génération de sites statiques (SSG) et le rendu côté client. Avec le routage basé sur le système de fichiers, les routes API intégrées et le support de l'authentification, SvelteKit permet de créer des applications web complètes avec une seule stack technologique.</p>
+                        <a href="https://svelte.dev/docs/kit/introduction" target="_blank" rel="noopener noreferrer" class="blog-link">Lire la suite →</a>
+                    </div>
+                </article>
+
+                <article class="blog-card">
+                    <div class="blog-date">
+                        <span class="date-day">05</span>
+                        <span class="date-month">Jan</span>
+                    </div>
+                    <div class="blog-content">
+                        <div class="blog-tags">
+                            <span class="blog-tag">SvelteKit</span>
+                            <span class="blog-tag">Performance</span>
+                            <span class="blog-tag">Bundle Size</span>
+                        </div>
+                        <h3>Performance SvelteKit : 40-60% moins de JavaScript que React/Vue</h3>
+                        <p>L'un des principaux avantages de SvelteKit réside dans ses performances exceptionnelles. En compilant les composants en JavaScript vanilla à la compilation, SvelteKit élimine le besoin d'un runtime framework. Les applications SvelteKit embarquent 40 à 60% moins de JavaScript que des applications React ou Vue équivalentes, résultant en des temps de chargement plus rapides et une meilleure expérience utilisateur, particulièrement sur mobile.</p>
+                        <a href="https://blog.madrigan.com/blog/202509101925/" target="_blank" rel="noopener noreferrer" class="blog-link">Lire la suite →</a>
+                    </div>
+                </article>
+
+                <article class="blog-card">
+                    <div class="blog-date">
+                        <span class="date-day">20</span>
+                        <span class="date-month">Déc</span>
+                    </div>
+                    <div class="blog-content">
+                        <div class="blog-tags">
+                            <span class="blog-tag">SvelteKit</span>
+                            <span class="blog-tag">TypeScript</span>
+                            <span class="blog-tag">DX</span>
+                        </div>
+                        <h3>Developer Experience avec SvelteKit : Productivité et simplicité</h3>
+                        <p>SvelteKit priorise la productivité des développeurs avec une syntaxe HTML-like intuitive nécessitant peu de boilerplate. Le framework offre un support TypeScript de première classe, un scoping CSS automatique sans bibliothèques supplémentaires, et un système de réactivité intégré. Le routage basé sur les fichiers simplifie la navigation et le code splitting automatique optimise les performances sans configuration supplémentaire.</p>
+                        <a href="https://criztec.com/sveltekit-complete-developers-guide-2025" target="_blank" rel="noopener noreferrer" class="blog-link">Lire la suite →</a>
+                    </div>
+                </article>
+
+                <article class="blog-card">
+                    <div class="blog-date">
+                        <span class="date-day">10</span>
+                        <span class="date-month">Déc</span>
+                    </div>
+                    <div class="blog-content">
+                        <div class="blog-tags">
+                            <span class="blog-tag">SvelteKit</span>
+                            <span class="blog-tag">Progressive Enhancement</span>
+                            <span class="blog-tag">Accessibilité</span>
+                        </div>
+                        <h3>Progressive Enhancement avec SvelteKit : Applications résilientes</h3>
+                        <p>SvelteKit adopte une philosophie de progressive enhancement, garantissant que les applications fonctionnent même lorsque JavaScript est désactivé. Cette approche améliore l'accessibilité, le SEO et la résilience des applications. Les formulaires peuvent fonctionner sans JavaScript grâce aux form actions, et le framework optimise automatiquement le préchargement des ressources pour une navigation fluide.</p>
+                        <a href="https://joyofcode.xyz/sveltekit-progressive-enhancement" target="_blank" rel="noopener noreferrer" class="blog-link">Lire la suite →</a>
+                    </div>
+                </article>
+
+                <article class="blog-card">
+                    <div class="blog-date">
+                        <span class="date-day">28</span>
+                        <span class="date-month">Nov</span>
+                    </div>
+                    <div class="blog-content">
+                        <div class="blog-tags">
+                            <span class="blog-tag">SvelteKit</span>
+                            <span class="blog-tag">Comparaison</span>
+                            <span class="blog-tag">React</span>
+                        </div>
+                        <h3>SvelteKit vs React : Comparaison des approches modernes</h3>
+                        <p>Alors que React domine le marché avec son écosystème massif, SvelteKit offre une alternative moderne avec des avantages significatifs en termes de performance et de simplicité. Contrairement à React qui nécessite un runtime, SvelteKit compile le code à la build, résultant en des bundles plus petits et des performances supérieures. Cette approche différente attire de plus en plus d'entreprises cherchant à optimiser leurs applications web.</p>
+                        <a href="https://criztec.com/sveltekit-complete-developers-guide-2025" target="_blank" rel="noopener noreferrer" class="blog-link">Lire la suite →</a>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Page Contact -->
+    <section id="contact" class="page">
+        <div class="container">
+            <h2 class="page-title">Contact</h2>
+            <p class="page-subtitle">N'hésitez pas à me contacter pour toute question ou opportunité</p>
+
+            <div class="contact-container">
+                <div class="contact-info">
+                    <div class="contact-card">
+                        <div class="contact-icon">📧</div>
+                        <h3>Email</h3>
+                        <p>baptistegodin02@gmail.com</p>
+                    </div>
+                    <div class="contact-card">
+                        <div class="contact-icon">📱</div>
+                        <h3>Téléphone</h3>
+                        <p>06 24 41 27 03</p>
+                    </div>
+                    <div class="contact-card">
+                        <div class="contact-icon">📍</div>
+                        <h3>Localisation</h3>
+                        <p>Valenciennes, France</p>
+                    </div>
+                </div>
+
+                <form class="contact-form" id="contactForm">
+                    <div class="form-group">
+                        <label for="name">Nom complet *</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email *</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="subject">Sujet *</label>
+                        <input type="text" id="subject" name="subject" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message *</label>
+                        <textarea id="message" name="message" rows="6" required></textarea>
+                    </div>
+                    <button type="submit" class="btn-primary">Envoyer le message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2026 Portfolio BTS SIO. Tous droits réservés.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
