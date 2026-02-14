@@ -292,6 +292,12 @@ h1, h2, h3, h4 {
     display: block;
 }
 
+.card-icon svg {
+    width: 3rem;
+    height: 3rem;
+    color: var(--primary);
+}
+
 .card-square h3 {
     font-size: 1.5rem;
     margin-bottom: 1rem;
@@ -579,6 +585,12 @@ h1, h2, h3, h4 {
     color: var(--text-secondary);
     margin-bottom: 1rem;
     font-size: 0.9rem;
+    display: flex;
+    align-items: center;
+}
+
+.experience-location svg {
+    flex-shrink: 0;
 }
 
 .experience-description {
@@ -726,6 +738,12 @@ h1, h2, h3, h4 {
     display: block;
 }
 
+.competence-icon svg {
+    width: 4rem;
+    height: 4rem;
+    color: var(--primary);
+}
+
 .competence-card h3 {
     font-size: 1.75rem;
     margin-bottom: 1rem;
@@ -868,20 +886,41 @@ h1, h2, h3, h4 {
 .contact-card {
     background: var(--bg-card);
     border: 2px solid var(--border);
-    padding: 2rem;
+    padding: 1.5rem;
     text-align: center;
     transition: all 0.3s ease;
 }
 
 .contact-card:hover {
     border-color: var(--primary);
-    transform: translateY(-4px);
-    box-shadow: 0 8px 24px var(--shadow-lg);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px var(--shadow);
+}
+
+.contact-card h3 {
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+    font-weight: 600;
+}
+
+.contact-card p {
+    font-size: 0.875rem;
+    margin: 0;
+    color: var(--text-secondary);
 }
 
 .contact-icon {
-    font-size: 3rem;
-    margin-bottom: 1rem;
+    margin-bottom: 0.75rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact-icon svg {
+    width: 1.5rem;
+    height: 1.5rem;
+    color: var(--primary);
+    opacity: 0.8;
 }
 
 .contact-card h3 {
@@ -942,6 +981,38 @@ h1, h2, h3, h4 {
     text-align: center;
     color: var(--text-secondary);
     margin-top: 4rem;
+}
+
+.footer-social {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    margin-top: 1.5rem;
+    flex-wrap: wrap;
+}
+
+.social-link {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: var(--text-secondary);
+    text-decoration: none;
+    transition: all 0.3s ease;
+    font-size: 0.9rem;
+}
+
+.social-link svg {
+    width: 20px;
+    height: 20px;
+}
+
+.social-link:hover {
+    color: var(--primary);
+    transform: translateY(-2px);
+}
+
+.social-link:hover svg {
+    color: var(--primary);
 }
 
 /* Responsive */
